@@ -8,56 +8,53 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>By changing the Project Coordinate Reference System, I was able to display various projecions in QGIS, allowing to examine the differences between each view at face value. I downloaded the Indicatrix mapper to show how each projection was warped, and where it was warped, to better analyze each projection. I then used the Project Layout to create the png for each projection, and added labels to easily distinguish each projection from each other.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This looks like a very classic world map, without much warping near the equator, but becomes warped near the poles.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>A more spherical world map, this projection allows for slightly less warping near the poles, trying to better replicate the earths shape as an ellipsoid.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>   
     <h2>Pseudo Mercator Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Similar to the WGS84 projection, but there is no warping, because of the way that it is flattened, but it is not as acurate to the shape of the world.</h3>
     <a href="./maps/3857.png">
     <img src="./maps/3857.png" alt="Pseudo Mercator" width='500px'>
     </a> 
     <h2>Winkel Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Very similar to the Aitoff Projection, showing the shape of the earth as an ellipsoid.</h3>
     <a href="./maps/53018.png">
     <img src="./maps/53018.png" alt="Winkel" width='500px'>
     </a> 
     <h2>Equal Area Cylindrical Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Shaped like a flattened cylinder, there is a lot of warping near the poles, because it is not adjusted to fit flatly.</h3>
     <a href="./maps/54034.png">
     <img src="./maps/54034.png" alt="Equal Area Cylindrical" width='500px'>
     </a> 
     <h2>Equidistant Conic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Viewed from the North Pole, there is extreme warping of the South Pole due to the view, but provides another way to look at the earth.</h3>
     <a href="./maps/54027.png">
     <img src="./maps/54027.png" alt="Equidistant Conic" width='500px'>
     </a> 
     <h2>Azimuthal Equidistant Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Views also from the North Pole, this projection wraps all the way around the earth, rather than leaving part of it like the Equidistant Conic Projection.</h3>
     <a href="./maps/102016.png">
     <img src="./maps/102016.png" alt="Azimuthal Equidistant" width='500px'>
     </a> 
-    <h2>Additional 1</h2>
-    <h3>Some observations</h3>
-    <a href="./maps/102016.png">
-    <img src="./maps/102016.png" alt="Aitoff" width='500px'>
+    <h2>Bonne Projection</h2>
+    <h3>Viewed almost like looking at a globe, there is warping on either side of the projection, due to it being almost collapsed as a globe shape.</h3>
+    <a href="./maps/54024.png">
+    <img src="./maps/54024.png" alt="Bonne" width='500px'>
     </a> 
-    <h2>Additional 2</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/54043.png">
-    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    <h2>Eckert I Projection</h2>
+    <h3>Similar to the Aitoff projection, but viewed at an angle rather than as an ellipsoid shape curve. Allows for minimal warping.</h3>
+    <a href="./maps/53015.png">
+    <img src="./maps/53015.png" alt="Eckert I" width='500px'>
     </a> 
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
